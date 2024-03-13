@@ -353,16 +353,3 @@ GROUP BY day_name;
 
 
 -----------------------------------------------------------------------------------------------------------------
---------------------------------Revenue and Profit calculations-------------------------------------------------
-
--------- Total Gross sales
-SELECT
-SUM(VAT+COGS) AS total_gross_sales
-FROM sales;
-
-
---------- Gross Profit
-
-SELECT
-(SUM(VAT + COGS)-COGS) AS gross_profit
-FROM sales;
